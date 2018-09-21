@@ -19,9 +19,9 @@ const tutor = require('../models/tutors');
     
 });
 
- router.route('/subject')   router.route('/inner')
-  .get((req, res) => {    .get((req, res) => {
-     res.render('inner');
+ router.route('/subject')   
+  .get((req, res) => {    
+    
      console.log(req.query.subject);  
     
     tutor.find( {subjects:req.query.subject}, function(err, docs){  

@@ -1,43 +1,68 @@
 <style>
-.tabContainer{
-  width: 100%;
-  height: 10%;
+.abc  {
+    background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/work-background-3.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size:cover;
+  height:800px;
+ margin-left:150px;
+margin-right:150px;
 }
-.tabContainer .buttonContainer{
-  height: 15%;
-
-}
-.tabContainer .buttonContainer button1{
-  width:25%;
-  height:100%;
-  float:left;
-  cursor:pointer;
-  border:none;
-  outline: none;
- 
-  font-size: 18px;
-  background-color:#aece61;
+.wpb_wrapper{
   color:white;
 }
-.tabContainer .buttonContainer button1:hover{
-	background-color:#134477;
+.wpb_wrapper h6{
+  color:white;
 }
-.tabContainer .tabPanel{
-  height: 85%;
-  background-color: grays;
-  color: white;
-  text-align: center;
-  padding-top: 105px;
-  box-sizing: border-box; 
-  font-family: sans-serif;
-  font-size: 22px;
-  color-white;
- display: none;
+
+#centeredmenu {
+   float:left;
+   width:100%;
+  
+   border-bottom:4px solid #000;
+   overflow:hidden;
+   position:relative;
+}
+#centeredmenu ul {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+#centeredmenu ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+#centeredmenu ul li a {
+   display:block;
+   margin:0 0 0 1px;
+   padding:10px 119px;
+   background:#ddd;
+   color:#000;
+   text-decoration:none;
+   line-height:3em;
+}
+#centeredmenu ul li a:hover {
+   background:#369;
+   
+}
+#centeredmenu ul li a.active,
+#centeredmenu ul li a.active:hover {
+   color:#fff;
+   background:#000;
+   font-weight:bold;
 }
 </style>
-
-
-
 
 <div class="top_panel_top">
    <div class="content_wrap">
@@ -135,20 +160,15 @@
       </div>
    </div>
 </div>
+<div class="abc">
 
-<div class="tabContainer">
-      <div class="buttonContainer">
-          <button1 onclick="showPanel(0,'#f44336')">Personal Details </button1>
-          <button1 onclick="showPanel(1,'#f4436')">Educational Details </button1>
-          <button1 onclick="showPanel(2,'#f4436')">Work Details </button1>
-          <button1 onclick="showPanel(3,'#f4436')">Teaching Details</button1>
-      </div>
-<div class="tabPanel">Personal Details:vdsvh</div>
-<div class="tabPanel">Educational Details:ghgggg</div>
-<div class="tabPanel">Work Details:vdsvh</div>
-<div class="tabPanel">Teaching Details:vdsvh</div>
-</div>
-
+<div id="centeredmenu">
+   <ul>
+      <li><a href="/users/profile" >Personal</a></li>
+      <li><a href="/users/education">Education</a></li>
+      <li><a href="/users/work">Work </a></li>
+      <li><a href="/users/teaching">Teaching</a></li>
+   </ul>
 
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1486386700771">
    <div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
@@ -166,9 +186,9 @@
       <div class="vc_column-inner ">
          <div class="wpb_wrapper">
             <div class="wpb_text_column wpb_content_element  vc_custom_1495537060802">
-             
+               
             </div>
-            <div role="form" class="wpcf7" id="wpcf7-f718-p663-o1" lang="en-US" dir="ltr">
+             <div role="form" class="wpcf7" id="wpcf7-f718-p663-o1" lang="en-US" dir="ltr">
                <div class="screen-reader-response"></div>
                <form action="/tutor-registration-page/#wpcf7-f718-p663-o1" method="post" class="wpcf7-form" novalidate="novalidate">
                   <div style="display: none;">
@@ -202,7 +222,7 @@
             <div class="wpb_text_column wpb_content_element ">
                <div class="wpb_wrapper">
                   <h6>Skill Requirements</h6>
-                  <p>Private tutoring is not always effective in raising academic achievement and in some schools students commonly skip classes or sleep through lessons because they are tired after excessive external study. This means that the shadow system can make regular schooling less efficient.</p>
+                  <z>Private tutoring is not always effective in raising academic achievement and in some schools students commonly skip classes or sleep through lessons because they are tired after excessive external study. This means that the shadow system can make regular schooling less efficient.</p>
                   <p>Teachers who spend more time focusing on private lessons than regular classes can cause greater inefficiencies in the mainstream school system. Situations in which teachers provide extra private lessons for pupils for whom they are already responsible in the public system can lead to corruption.</p>
                </div>
             </div>

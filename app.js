@@ -4,6 +4,32 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const expressHandlebars = require('express-handlebars');
+const request = require('request');
+
+
+var URL = "https://www.ipapi.co/json";
+var city ;
+
+request({
+
+ url: URL,
+ json: true
+},(err,res,body) => {
+
+ if(err){
+   console.log(err);
+ }
+ else{
+
+
+   city = body.city;
+    console.log(body.city);
+     console.log(body.ip);
+ }
+
+});
+
+
 const app = express();
 app.use(morgan('dev'));
 

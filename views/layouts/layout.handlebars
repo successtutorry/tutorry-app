@@ -233,9 +233,29 @@ element.style {
 }
 </style>
 
+
+<script type='text/javascript' src='http://smarthead.ancorathemes.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://smarthead.ancorathemes.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://smarthead.ancorathemes.com/wp-content/plugins/essential-grid/public/assets/js/lightbox.js?ver=2.1.6.2'></script>
+<script type='text/javascript' src='http://smarthead.ancorathemes.com/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.1.6.2'></script>
+<script type='text/javascript' src='http://smarthead.ancorathemes.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.6.4'></script>
+
   </head>
 
   <body class="home page-template-default page page-id-219 frontpage body_tag scheme_default blog_mode_home body_style_wide  is_stream blog_style_excerpt sidebar_hide expand_content header_style_header-default header_position_over menu_style_top wpb-js-composer js-comp-ver-5.5.2 vc_responsive desktop_layout">
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <style type="text/css">
+   
+   .modal-open{overflow:hidden}
+   .modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1050;display:none;overflow:hidden;
+ </style>
+
 
     <div class="body_wrap">
       <div class="page_wrap">
@@ -245,6 +265,58 @@ element.style {
       </div>
     </div>
 
+
+<div class="trx_addons_popup trx_addons_tabs mfp-hide modal fade" id="myModal">
+  <ul class="trx_addons_tabs_titles"><li class="trx_addons_tabs_title trx_addons_tabs_title_login">
+      <a href="#trx_addons_login_content">
+        <i class="trx_addons_icon-lock-open"></i>     
+        Login     </a>
+    </li><li class="trx_addons_tabs_title trx_addons_tabs_title_register" data-disabled="true">
+      <a href="#trx_addons_register_content">
+        <i class="trx_addons_icon-user-plus"></i>     
+        Register      </a>
+    </li></ul>  <div id="trx_addons_login_content" class="trx_addons_tabs_content trx_addons_login_content">
+    <div>
+      <div class="trx_addons_popup_form_wrap trx_addons_popup_form_wrap_login" > 
+        <form class="trx_addons_popup_form trx_addons_popup_form_login sc_input_hover_iconed" action="http://smarthead.ancorathemes.com/wp-login.php" method="post" name="trx_addons_login_form">
+          <input type="hidden" id="login_redirect_to" name="redirect_to" value="">
+          <div class="trx_addons_popup_form_field trx_addons_popup_form_field_login">
+            <label class="sc_form_field sc_form_field_log required">
+    <span class="sc_form_field_wrap"><input type="text" 
+          name="log"
+          id="log"
+          value=""
+           aria-required="true"                   ><span class="sc_form_field_hover"><i class="sc_form_field_icon trx_addons_icon-user-alt"></i><span class="sc_form_field_content" data-content="Login">Login</span></span>  </span>
+</label>
+          </div>
+          <div class="trx_addons_popup_form_field trx_addons_popup_form_field_password">
+            <label class="sc_form_field sc_form_field_pwd required">
+    <span class="sc_form_field_wrap"><input type="password" 
+          name="pwd"
+          id="pwd"
+          value=""
+           aria-required="true"                   ><span class="sc_form_field_hover"><i class="sc_form_field_icon trx_addons_icon-lock"></i><span class="sc_form_field_content" data-content="Password">Password</span></span>  </span>
+</label>
+          </div>
+          <div class="trx_addons_popup_form_field trx_addons_popup_form_field_remember">
+            <a href="http://smarthead.ancorathemes.com/my-account/lost-password/" class="trx_addons_popup_form_field_forgot_password">Forgot password?</a>
+            <input type="checkbox" value="forever" id="rememberme" name="rememberme"><label for="rememberme"> Remember me</label>
+          </div>
+          <div class="trx_addons_popup_form_field trx_addons_popup_form_field_submit">
+            <input type="submit" class="submit_button" value="Login">
+          </div>
+          <div class="trx_addons_message_box sc_form_result"></div>
+        </form>
+      </div>
+    </div>
+
+
+
+
+ 
+
+
   </body>
 
 </html>
+

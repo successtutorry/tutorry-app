@@ -5,6 +5,17 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const expressHandlebars = require('express-handlebars');
 const request = require('request');
+const mongoose = require('mongoose');
+
+
+mongoose.connect('mongodb://root:root123@ds251362.mlab.com:51362/tutorry', { useNewUrlParser: true}, function(err){
+
+  if(err){
+    console.log(err);
+  } else {
+    console.log('Connected to the database');
+  }
+});
 
 
 var URL = "https://www.ipapi.co/json";

@@ -9,6 +9,8 @@ const bodyParser = require('body-parser');
 const ContactusForm = require('../models/contactusform');
 const passport = require('passport');
 const randomstring = require('randomstring');
+const tutor = require('../models/tutors');
+const request = require('request');
 
 
 
@@ -62,6 +64,96 @@ router.route('/contacts')
       res.redirect('/users/contacts');
 
 
+  });
+
+  var URL = "https://www.ipapi.co/json";
+var city ;
+
+request({
+
+  url: URL,
+  json: true
+},(err,res,body) => {
+
+  if(err){
+    console.log(err);
+  }
+  else{
+
+    city = body.city;
+     
+  }
+
+});
+
+
+   router.route('/gettutors')
+              .get((req, res) => {
+
+              if (req.query.n&&req.query.z){
+
+                   console.log('display subect and zipcode');
+                   tutor.find( {subjects:req.query.n, zipcode:req.query.z}, function(err, docs){
+                    var subjectChunks = [];
+                    var chunkSize = 3;
+                    for(var i=0; i < docs.length; i+= chunkSize){
+                        subjectChunks.push(docs.slice(i, i+chunkSize));
+                    }
+                      res.render('find_tutor', {  tutors: subjectChunks });
+                    
+                  }).sort({price:+1});
+
+             }
+
+             
+            
+             else if(req.query.n){
+
+              console.log('display subject');
+               tutor.find( {subjects:req.query.n,location:city}, function(err, docs){
+                var subjectChunks = [];
+                var chunkSize = 3;
+                for(var i=0; i < docs.length; i+= chunkSize){
+                    subjectChunks.push(docs.slice(i, i+chunkSize));
+                }
+                  res.render('find_tutor', {  tutors: subjectChunks });
+                
+              }).sort({price:+1});
+
+             }
+
+             else if(req.query.z){
+
+               
+
+                console.log('display zipcode');
+              tutor.find( {zipcode:req.query.z}, function(err, docs){
+                var subjectChunks = [];
+                var chunkSize = 3;
+                for(var i=0; i < docs.length; i+= chunkSize){
+                    subjectChunks.push(docs.slice(i, i+chunkSize));
+                }
+                  res.render('find_tutor', {  tutors: subjectChunks });
+                
+              }).sort({price:+1});
+
+
+             }
+
+             else {
+
+              console.log('query based on ip and zipcode');
+               tutor.find( {location:city}, function(err, docs){
+                    var subjectChunks = [];
+                    var chunkSize = 3;
+                    for(var i=0; i < docs.length; i+= chunkSize){
+                        subjectChunks.push(docs.slice(i, i+chunkSize));
+                    }
+                      res.render('find_tutor', {  tutors: subjectChunks });
+                    
+                  }).sort({price:+1});
+
+             }
   });
 
 

@@ -24,8 +24,8 @@
             <div class="sc_layouts_item">
                <nav class="menu_main_nav_area sc_layouts_hide_on_mobile">
                   <ul id="menu_main" class="sc_layouts_menu_nav menu_main_nav inited sf-js-enabled sf-arrows">
-                     <li id="menu-item-105" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-105"><a href="/" class="sf-with-ul"><span>Home</span></a>
-                     
+                     <li id="menu-item-105" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-105">
+                        <a href="/" class="sf-with-ul"><span>Home</span></a>
                         <ul class="sub-menu" style="display: none;">
                            <li id="menu-item-107" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-107">
                               <a href="#" class="sf-with-ul"><span>Tools</span></a>
@@ -66,10 +66,9 @@
                      </li>
                      <li id="menu-item-548" class="menu-item menu-item-type-type-post_type menu-item-object-page current-menu-item page_item page-item-128 current_page_item menu-item-165"><a href="/users/find_tutor"><span>Find a Tutor</span></a></li>
                      <li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="/users/become_tutor"><span>Become a Tutor</span></a></li>
-                    <li id="menu-item-165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-548"><a href="/users/profile"><span>Profile</span></a></li>
-                                        <li id="menu-item-165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-548"><a href="#"><span>About Us</span></a></li>
+                     <li id="menu-item-165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-548"><a href="/users/profile"><span>Profile</span></a></li>
+                     <li id="menu-item-165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-548"><a href="#"><span>About Us</span></a></li>
                      <li id="menu-item-165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-548"><a href="#"><span>Contacts</span></a></li>
-                                        
                   </ul>
                </nav>
                <div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
@@ -107,7 +106,7 @@
          <h4 class="tp-form-title">Tutor</h4>
       </div>
       <div class="tp-form">
-         <form role="search" action="http://smarthead.ancorathemes.com/" method="get" id="tutor-search-form" class="tutor-plugin tutor-plugin-form-search">
+         <form role="search" action="/users/gettutors" method="get" id="tutor-search-form" class="tutor-plugin tutor-plugin-form-search">
             <input type="hidden" name="post_type" value="tutor">
             <input type="hidden" name="s" value="">
             <input type="text" name="n" placeholder="Enter a Subject" value="" autocomplete="off">
@@ -132,7 +131,7 @@
             <div class="tagcloud"><a href="http://smarthead.ancorathemes.com/tutor_tag/architecture/" class="tag-cloud-link tag-link-65 tag-link-position-1 sc_button_hover_slide_left" style="font-size: 22pt;" aria-label="Architecture (2 items)">Architecture</a>
                <a href="http://smarthead.ancorathemes.com/tutor_tag/biology/" class="tag-cloud-link tag-link-62 tag-link-position-2 sc_button_hover_slide_left" style="font-size: 22pt;" aria-label="Biology (2 items)">Biology</a>
                <a href="http://smarthead.ancorathemes.com/tutor_tag/business-study/" class="tag-cloud-link tag-link-63 tag-link-position-3 sc_button_hover_slide_left" style="font-size: 22pt;" aria-label="Business Study (2 items)">Business Study</a>
-               <a href="http://smarthead.ancorathemes.com/tutor_tag/chemistry/" class="tag-cloud-link tag-link-64 tag-link-position-4 sc_button_hover_slide_left" style="font-size: 22pt;" aria-label="Chemistry (2 items)">Chemistry</a>
+               <a href="/users/gettutors/?n=Chemistry" class="tag-cloud-link tag-link-64 tag-link-position-4 sc_button_hover_slide_left" style="font-size: 22pt;" aria-label="Chemistry (2 items)">Chemistry</a>
                <a href="http://smarthead.ancorathemes.com/tutor_tag/coding/" class="tag-cloud-link tag-link-59 tag-link-position-5 sc_button_hover_slide_left" style="font-size: 22pt;" aria-label="Coding (2 items)">Coding</a>
                <a href="http://smarthead.ancorathemes.com/tutor_tag/communication/" class="tag-cloud-link tag-link-60 tag-link-position-6 sc_button_hover_slide_left" style="font-size: 22pt;" aria-label="Communication (2 items)">Communication</a>
                <a href="http://smarthead.ancorathemes.com/tutor_tag/computer-science/" class="tag-cloud-link tag-link-61 tag-link-position-7 sc_button_hover_slide_left" style="font-size: 22pt;" aria-label="Computer Science (2 items)">Computer Science</a>
@@ -142,12 +141,64 @@
                <a href="http://smarthead.ancorathemes.com/tutor_tag/marketing/" class="tag-cloud-link tag-link-70 tag-link-position-11 sc_button_hover_slide_left" style="font-size: 8pt;" aria-label="Marketing (1 item)">Marketing</a>
                <a href="http://smarthead.ancorathemes.com/tutor_tag/mathematics/" class="tag-cloud-link tag-link-71 tag-link-position-12 sc_button_hover_slide_left" style="font-size: 8pt;" aria-label="Mathematics (1 item)">Mathematics</a>
                <a href="http://smarthead.ancorathemes.com/tutor_tag/organic-chemistry/" class="tag-cloud-link tag-link-67 tag-link-position-13 sc_button_hover_slide_left" style="font-size: 8pt;" aria-label="Organic Chemistry (1 item)">Organic Chemistry</a>
-               <a href="http://smarthead.ancorathemes.com/tutor_tag/physics/" class="tag-cloud-link tag-link-68 tag-link-position-14 sc_button_hover_slide_left" style="font-size: 8pt;" aria-label="Physics (1 item)">Physics</a>
+               <a href="/users/gettutors/?n=Science" class="tag-cloud-link tag-link-68 tag-link-position-14 sc_button_hover_slide_left" style="font-size: 8pt;" aria-label="Physics (1 item)">Physics</a>
                <a href="http://smarthead.ancorathemes.com/tutor_tag/social-studies/" class="tag-cloud-link tag-link-69 tag-link-position-15 sc_button_hover_slide_left" style="font-size: 8pt;" aria-label="Social Studies (1 item)">Social Studies</a>
                <a href="http://smarthead.ancorathemes.com/tutor_tag/spanish/" class="tag-cloud-link tag-link-54 tag-link-position-16 sc_button_hover_slide_left" style="font-size: 8pt;" aria-label="Spanish (1 item)">Spanish</a>
-               <a href="http://smarthead.ancorathemes.com/tutor_tag/world-history/" class="tag-cloud-link tag-link-66 tag-link-position-17 sc_button_hover_slide_left" style="font-size: 8pt;" aria-label="World History (1 item)">World History</a>
+               <a href="/users/gettutors/?n=History" class="tag-cloud-link tag-link-66 tag-link-position-17 sc_button_hover_slide_left" style="font-size: 8pt;" aria-label="World History (1 item)">World History</a>
             </div>
          </aside>
-        </div>
-        </div>
-        </div>
+      </div>
+   </div>
+</div>
+
+<div class="content">
+   <form action='/users/filter' class="tutor-plugin-ordering" method="get">
+      <label class="select_container">
+         <select name="orderby" class="orderby filled">
+            <option value="default" selected="selected">Default sorting</option>
+            <option value="price">Sort by price: low to high</option>
+            <option value="price-desc">Sort by price: high to low</option>
+         </select>
+      </label>
+      <input type="submit">
+   </form>
+
+   <!---start of tutor profile--->
+   <div class="tp-columns-container">
+
+      {{# each tutors}}
+      <div class="tutor-plugin column-1-2">
+         {{# each this}}
+         <div id="post-578" class="post-578 tutor type-tutor status-publish has-post-thumbnail hentry tutor_group-personal tutor_tag-coding tutor_tag-communication tutor_tag-computer-science">
+            <div class="tp-single tp-post">
+
+               <div class="tp-featured">
+                  <img width="740" height="792" src="http://smarthead.ancorathemes.com/wp-content/uploads/2016/11/tutor8-740x792.jpg" class="attachment-tutor-archive size-tutor-archive wp-post-image" alt="" srcset="http://smarthead.ancorathemes.com/wp-content/uploads/2016/11/tutor8-740x792.jpg 740w, http://smarthead.ancorathemes.com/wp-content/uploads/2016/11/tutor8-280x300.jpg 280w, http://smarthead.ancorathemes.com/wp-content/uploads/2016/11/tutor8-370x397.jpg 370w" sizes="(max-width: 740px) 100vw, 740px">                        
+                  <div class="tp-featured-overlay">
+                     <div class="tp-price">
+                        <span class="tp-present-price"><span class="small">$</span>{{this.price}}                                                </span>
+                        <span class="tp-period-price">hour                                        </span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="tp-content">
+                  <div class="tp-subjects">
+                  <span class="tp-tutor-subjects">{{this.subjects}}</span>
+                  </div>
+                  <div class="tp-title">
+                     <a class="tp-title-link" href="http://smarthead.ancorathemes.com/tutors/josh-summers/">{{this.name}}</a>
+                  </div>
+                  <div class="tp-read-more">
+                     <a class="tp-title-read-more sc_button_hover_slide_left" href="http://smarthead.ancorathemes.com/tutors/josh-summers/">View Tutor</a>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+         {{/each}}
+      </div>
+      {{/each}}       
+   </div><!----end of tutor profile--->
+</div>

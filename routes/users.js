@@ -1,7 +1,24 @@
 const express = require('express');
 const router = express.Router();
+const Joi = require('joi');
+const nodemailer = require('nodemailer');
+const smtpTransport = require('nodemailer-smtp-transport');
+const mailer = require('../misc/mailer');
+const url = require('url');
+const bodyParser = require('body-parser');
+const ContactusForm = require('../models/contactusform');
+const passport = require('passport');
+const randomstring = require('randomstring');
 
 
+
+
+const contactusSchema = Joi.object().keys({
+  email: Joi.string().email().required(),
+  name: Joi.string().required(),
+  message: Joi.string().required()
+  
+});
 
 
 router.route('/contacts')
